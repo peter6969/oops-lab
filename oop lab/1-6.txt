@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+	char str[100],t[50];
+        printf("enter any string\n");
+	gets(str);
+        printf("enter any string to append\n");
+	gets(t);
+    custom_strcat(&str,&t);
+    puts(str);
+	return 0;
+}
+void custom_strcat(char *s, char *t) {
+    while(*s) /* finding the end of the string */
+        s++;
+
+    while((*s++ = *t++)) /* copy t */
+        ;
+}

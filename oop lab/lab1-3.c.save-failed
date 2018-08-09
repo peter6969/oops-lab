@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{int i,n1,a,b,c,d;
+for(i=33;i<=99;i++)
+{n1=i*i;
+n1=n1/10;
+a=n1%10;
+n1=n1/10;
+b=n1%10;
+n1=n1/10;
+c=n1%10;
+n1=n1/10;
+d=n1%10;
+if(a==b&&c==d)
+    printf("%d",i*i);
+}return 0;
+}
